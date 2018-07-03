@@ -1,0 +1,95 @@
+#main-header{
+  background:coral;
+  color:#fff;
+}
+
+/* html {
+  height: 100%;
+  box-sizing: border-box;
+} */
+
+body {
+    /*background-color: rgb(253, 174, 42) !important;*/
+        background-color: rgba(200, 200, 200, .75) !important;
+}
+
+.container {
+  background: white;
+}
+
+    .navbar {
+	background-color: #333;
+   font-size: 17px;
+   color: white !important;
+   padding: 10px 0px;
+   margin-bottom:0px;
+     text-decoration:none;
+}
+
+.navbar a:visited {
+  color: white;
+}
+
+.navbar a:link {
+  color: white;
+}
+
+#contact {
+  margin-top: 20px;
+}
+
+
+ul.nav a:hover {
+  color: black !important;
+}
+
+.main {
+  margin-top:0px;
+  color: black;
+}
+
+.showcase {
+      background-image:url('blueBackground.jpg');
+}
+
+.email {
+  color: white !important;
+}
+
+.sample li{
+  display: inline;
+  font-size: 26px;
+  padding: 0px 8px;
+}
+
+  .portfolio {
+    background-color: white;
+		padding-top: 0px;
+		padding-bottom: 10px;
+
+  }
+
+  .frame1 {
+    border-style: dashed;
+    border-width: 5px;
+    background-color: white;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+
+  .picDiv {
+    padding: 20px
+  }
+
+  @media (max-width:800px){
+
+    .picdiv{
+      display: none;
+      visibility: collapse;
+    }
+
+    button {
+      height:70px;
+      font-size: 40px;
+    }
+  }
