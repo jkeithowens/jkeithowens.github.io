@@ -1,0 +1,175 @@
+
+#housePic {
+  margin-top: 30px;
+}
+
+.forSteve {
+    background-image: url("pics/OSB.jpeg");
+}
+
+.strokeme
+{
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.photo {
+    max-height: 300px; /*this makes sure to maintain the aspect ratio*/
+    width: auto; /*set the width or max-width*/
+}
+
+@media only screen and (max-width: 900px) {
+  .topPhoto {
+    width: 0px;
+  }
+}
+
+.frame {
+
+    position: relative;
+top: 50%;
+transform: translateY(-50%);
+}
+
+.smallphoto {
+    max-height: 235px; /*this makes sure to maintain the aspect ratio*/
+    width: auto; /*set the width or max-width*/
+}
+
+.whitebackground{
+    /*background-color: #eee !important;*/
+    background-color:  rgb(219, 219, 219)!important;
+    padding-top: 30px;
+    border-radius: 5px;
+}
+
+h1{
+  font-family: arial black;
+  font-size: 60px;
+  background-color:  rgb(219, 219, 219)!important;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.btn{
+    border-width:0px;
+    border-color: black;
+    color: lightgray;
+    background-color: rgb(111, 109, 109);
+    font-size: 20px;
+
+}
+
+.footer {
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   padding: 0rem;
+   text-align: center;
+}
+
+
+
+body {
+    /*background-color: rgb(253, 174, 42) !important;*/
+    background-color: silver !important;
+    position: relative;
+    padding-bottom: 6rem;
+    min-height: 100%;
+padding-top: 40px;
+}
+@media only screen and (min-width: 900px) {
+  .bodybackground {
+    background: url(pics/backgroundpic.jpg);
+    background-size: 400px 100px;
+    background-repeat: repeat-y;
+  }
+}
+
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+p {
+    color: black;
+    font-size: 17px;
+}
+
+/*centers main paragraph*/
+.textbox {
+  display: -webkit-box;
+display: -webkit-flex;
+display: -moz-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-flex-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+ }
+
+/* Add a background color and some padding around the form */
+.containerinput {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.contactinfo  {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+
+}
+
+.owensborder {
+  border: 5px solid #6F6D71;
+  border-radius: 15px;
+  padding: 10px;
+}

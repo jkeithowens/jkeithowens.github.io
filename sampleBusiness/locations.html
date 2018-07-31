@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="pics/logo.png">
+
+    <title>Sample Business</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+  </head>
+
+  <body class="bodybackground">
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <img class="img-fluid" style = "max-height: 50px; margin-bottom: 1px" src="pics/logo.png" alt="logo"/>
+      <a class="navbar-brand" href="sampleIndex.html">Sample Business</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="sampleIndex.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="about.html">About Us</a>
+              <a class="dropdown-item" href="cost.html">Locations</a>
+              <a class="dropdown-item" href="faq.html">FAQ</a>
+              <a class="dropdown-item" href="virtualtour.html">Request a Quote</a>
+            </div>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About </a>
+          <li class="nav-item">
+            <a class="nav-link" href="inspection.html">Home Inspections </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.php">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="locations.html">Locations</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+<!-- /////google map stufff test -->
+    <div id="map_wrapper">
+    <div id="map_canvas" class="mapping"></div>
+</div>
+
+
+<div class='container'>
+    <div class="row" style='margin-top: 75px'>
+      <div class='col-md-4'></div>
+      <div class='col-md-8'>
+      <!-- Example row of columns -->
+      <div class='' id="map"></div>
+      <script>
+        function initMap() {
+          var uluru = {lat: 39.9975, lng: -85.7466};
+          var myLatLngRich = {lat: 39.8289, lng: -84.8902};
+          var myLatLngLeb = {lat: 40.0484, lng: -86.469};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 7,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+
+            position: myLatLngRich,
+            map: map,
+            title: 'Richmond is here'
+          });
+          var marker1 = new google.maps.Marker({
+
+            position: myLatLngLeb,
+            map: map,
+            title: 'Hello World!'
+          });
+
+          var infoWindow = new google.maps.InfoWindow({
+content: 'Sample Business' +'<br>'+ "Richmond, IN"+'<br>'+ "John Sr." + '<br>' +"sr@samplebusiness.net"+'<br>' + "phone: " + '<a href="tel:1-765-914-8107">765-914-8107</a>'
+    });
+    var infoWindow1 = new google.maps.InfoWindow({
+content: 'Sample Business' +'<br>' +"Indy, IN"+'<br>'+ "John" + '<br>' +"john@samplebusiness.net"+'<br>' + "phone: " + '<a href="tel:1-765-993-9071">765-993-9071</a>'
+});
+
+var contentString = 'hello'
+
+    google.maps.event.addListener(marker1, 'click', function() {
+    infoWindow1.open(map, marker1);
+});
+    google.maps.event.addListener(marker, 'click', function() {
+    infoWindow.open(map, marker);
+});
+        }
+
+      </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2hAhcPtELJCcih6AasTnYE4D4GkB2o0E&callback=initMap">
+      </script>
+
+
+    </div>
+</div>
+</div>
+
+
+
+    <div class="container" style="margin-top:25px; padding: 10px;">
+        <div class="row"  >
+          <div class="col-md-4"></div>
+        <div class=' col-md-4' style="padding: 10px;">
+          <div class="col-md-12 col-12 contactinfo"  >
+          <p>Sample Business <br> Servicing the Richmond, IN and <br> the Wayne County area <br> John Sr. <br> <a href="mailto:sr@samplebusiness.net">jr@samplebusiness.net</a> <br> phone: <a href="tel:1-555-555-5555">555-555-5555</a></p>
+          </div>
+        </div>
+        <div class='  col-md-4'style="padding: 10px;">
+          <div class="col-md-12 col-12 contactinfo"  >
+          <p>Sample Business <br> Servicing all of Central Indiana <br> John <br> <a href="mailto:johhn@samplebusiness.net">john@samplebusiness.net</a> <br> phone: <a href="tel:1-555-555-5555">555-555-5555</a></p>
+          </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="spacing"></div>
+
+          <div class="footer">
+            <p>&copy; Owens Enterprises 2018</p>
+          </div>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="bootstrap/assets/js/vendor/popper.min.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="bootstrap/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
