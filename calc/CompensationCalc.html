@@ -1,16 +1,17 @@
 <!DOCTYPE html>
+<!-- stuff and things -->
 <html>
 <head>
   <meta charset="utf-8">
   <title>Career Compensation Calculator </title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   <link rel="stylesheet" href="CompensationCalc.css">
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 </head>
 
 
 <body>
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"> </script>
 
 
 
@@ -22,10 +23,10 @@
 
   <div class="containerinput">
 
-    <div class='option1'>
+    <div class='option1 container'>
       <h3>Option #1</h3>
-
-      <select id="state_1">
+<div class="row">
+      <select id="state_1" class="col-sm-3 col-12">
         <option value="" selected disabled hidden>Select State</option>
       	<option value="AL">Alabama</option>
       	<option value="AK">Alaska</option>
@@ -80,35 +81,37 @@
       	<option value="WY">Wyoming</option>
       </select>
 
-      <select id="taxStatus_1">
+      <select id="taxStatus_1" class="col-sm-3 col-12">
         <option value="" selected disabled hidden>Tax Filing</option>
       	<option value="married">Married</option>
       	<option value="single">Single</option>
       </select>
+<!-- <div class="row"> -->
+      <input id="salary_1" placeholder="Base Salary $" type="number" class="col-sm-6 col-12">
 
-      <input id="salary_1" placeholder="Base Salary $" type="number">
+      <input id="401k_1" placeholder="401K match %" type="number" class="col-sm-6 col-lg-3 col-md-4 col-12">
 
-      <input id="401k_1" placeholder="401K match %" type="number">
 
-      <input id="daysOff_1" placeholder="Paid Days Off" type="number">
+      <input id="daysOff_1" placeholder="Paid Days Off" type="number" class="col-sm-6 col-lg-3 col-md-4 col-12">
 
-      <input id="parking_1" placeholder="Monthly Parking Cost $" type="number">
+      <input id="parking_1" placeholder="Monthly Parking Cost $" type="number"class="col-sm-6 col-lg-3 col-md-4 col-12">
 
-      <input id="miles_1" placeholder="Daily One Way Commute Miles" type="number">
+      <input id="miles_1" placeholder="Daily One Way Commute Miles" type="number" class="col-sm-6 col-lg-3 col-md-4 col-12">
 
-      <input id="insurance_1" placeholder="Value of Health Insurance $" type="number">
+      <input id="insurance_1" placeholder="Value of Health Insurance $" type="number" class="col-sm-6 col-lg-3 col-md-4 col-12">
 
-      <input id="bonus_1" placeholder="Annual Bonus Opportunity $" type="number">
+      <input id="bonus_1" placeholder="Annual Bonus Opportunity $" type="number" class="col-sm-6 col-lg-3 col-md-4 col-12">
 
-      <input id="cellPhone_1" placeholder="Monthly Cell Phone Allowance $" type="number">
+      <input id="cellPhone_1" placeholder="Monthly Cell Phone Allowance $" type="number" class="col-sm-6 col-lg-3 col-md-4 col-12">
 
-      <input id="tuition_1" placeholder="Annual Tuition Reimbursement" type="number">
+      <input id="tuition_1" placeholder="Annual Tuition Reimbursement" type="number" class="col-sm-6 col-md-4 col-lg-3 col-12">
+    </div>
 
     </div>
-    <div class='option2'>
+    <div class='option2 container'>
       <h3>Option #2</h3>
-
-      <select id="state_2"> Select State
+<div class="row">
+      <select id="state_2" class="col-sm-3 col-12"> Select State
         <option value="" selected disabled hidden>Select State</option>
       	<option value="AL">Alabama</option>
       	<option value="AK">Alaska</option>
@@ -163,30 +166,30 @@
       	<option value="WY">Wyoming</option>
       </select>
 
-      <select id="taxStatus_2">
+      <select id="taxStatus_2" class="col-sm-3 col-12">
         <option value="" selected disabled hidden>Tax Filing</option>
       	<option value="married">Married</option>
       	<option value="single">Single</option>
       </select>
 
-      <input id="salary_2" placeholder="Base Salary $" type="number">
+      <input id="salary_2" placeholder="Base Salary $" type="number" class="col-sm-6 col-12">
 
-      <input id="401k_2" placeholder="401K match %" type="number">
+      <input id="401k_2" placeholder="401K match %" type="number" class="col-sm-6 col-md-4 col-lg-3 col-12">
 
-      <input id="daysOff_2" placeholder="Paid Days Off" type="number">
+      <input id="daysOff_2" placeholder="Paid Days Off" type="number" class="col-sm-6 col-md-4 col-lg-3 col-12">
 
-      <input id="parking_2" placeholder="Monthly Parking Cost $" type="number">
+      <input id="parking_2" placeholder="Monthly Parking Cost $" type="number" class="col-sm-6 col-md-4 col-lg-3 col-12">
 
-      <input id="miles_2" placeholder="Daily One Way Commute Miles" type="number">
+      <input id="miles_2" placeholder="Daily One Way Commute Miles" type="number" class="col-sm-6 col-md-4 col-lg-3 col-12">
 
-      <input id="insurance_2" placeholder="Value of Health Insurance $" type="number">
+      <input id="insurance_2" placeholder="Value of Health Insurance $" type="number" class="col-sm-6 col-md-4 col-lg-3 col-12">
 
-      <input id="bonus_2" placeholder="Annual Bonus Opportunity $" type="number">
+      <input id="bonus_2" placeholder="Annual Bonus Opportunity $" type="number" class="col-sm-6 col-md-4 col-lg-3 col-12">
 
-      <input id="cellPhone_2" placeholder="Monthly Cell Phone Allowance $" type="number">
+      <input id="cellPhone_2" placeholder="Monthly Cell Phone Allowance $" type="number" class="col-sm-6 col-md-4 col-lg-3 col-12">
 
-      <input id="tuition_2" placeholder="Annual Tuition Reimbursement" type="number">
-
+      <input id="tuition_2" placeholder="Annual Tuition Reimbursement" type="number" class="col-sm-6 col-md-4 col-lg-3 col-12">
+</div>
       <br />
       <br />
       <input id="checkBox" type="checkbox">
@@ -234,5 +237,7 @@
 </body>
 
 
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"> </script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="CompensationCalc.js"></script>
 </html>
