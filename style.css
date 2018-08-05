@@ -1,6 +1,14 @@
 #main-header{
   background:coral;
   color:#fff;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-bottom: 15px solid black;
+}
+
+#secondary-header{
+  	background: #333;
+  height: 0px;
 }
 
 /* html {
@@ -11,10 +19,12 @@
 body {
     /*background-color: rgb(253, 174, 42) !important;*/
         background-color: rgba(200, 200, 200, .75) !important;
+        height: 100%;
 }
 
 .container {
   background: white;
+  height: 100%;
 }
 
     .navbar {
@@ -57,8 +67,8 @@ ul.nav a:hover {
 }
 
 .sample li{
-  display: inline;
-  font-size: 26px;
+  /* display: inline; */
+  font-size: 20px;
   padding: 0px 8px;
 }
 
